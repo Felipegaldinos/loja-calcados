@@ -1,0 +1,137 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-beige: #f5f1eb;
+  --color-light-beige: #faf8f4;
+  --color-dark-beige: #e8e0d6;
+  --color-black: #1a1a1a;
+  --color-gray: #666666;
+  --color-light-gray: #f8f8f8;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  line-height: 1.6;
+}
+
+.bg-beige {
+  background-color: var(--color-beige);
+}
+
+.bg-light-beige {
+  background-color: var(--color-light-beige);
+}
+
+.bg-dark-beige {
+  background-color: var(--color-dark-beige);
+}
+
+.text-beige {
+  color: var(--color-beige);
+}
+
+.border-beige {
+  border-color: var(--color-beige);
+}
+
+.hover\:bg-beige:hover {
+  background-color: var(--color-beige);
+}
+
+.product-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-dark-beige);
+}
+
+.filter-button {
+  transition: all 0.2s ease;
+}
+
+.filter-button.active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, var(--color-light-beige) 0%, var(--color-beige) 100%);
+}
+
+.search-input {
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.1);
+}
+
+.category-card {
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.price-tag {
+  background: linear-gradient(45deg, var(--color-black), #333);
+  color: var(--color-white);
+}
+
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

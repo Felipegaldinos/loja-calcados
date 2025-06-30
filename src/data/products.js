@@ -1,0 +1,122 @@
+export const mockProducts = [
+  {
+    id: 1,
+    name: 'Tênis Esportivo Premium',
+    category: 'esportivo',
+    price: 299.90,
+    originalPrice: 399.90,
+    image: 'Tênis esportivo moderno branco e preto',
+    rating: 4.8,
+    reviews: 124,
+    isNew: true,
+    isSale: true,
+    description: 'Conforto e performance para suas corridas. Tecnologia de amortecimento avançada e design arrojado.',
+    sizes: [38, 39, 40, 41, 42]
+  },
+  {
+    id: 2,
+    name: 'Sapato Social Clássico',
+    category: 'social',
+    price: 189.90,
+    originalPrice: null,
+    image: 'Sapato social masculino em couro preto elegante',
+    rating: 4.6,
+    reviews: 89,
+    isNew: false,
+    isSale: false,
+    description: 'Elegância e sofisticação para ocasiões formais. Feito em couro legítimo de alta qualidade.',
+    sizes: [39, 40, 41, 42, 43]
+  },
+  {
+    id: 3,
+    name: 'Sandália Feminina Elegante',
+    category: 'feminino',
+    price: 149.90,
+    originalPrice: 199.90,
+    image: 'Sandália feminina bege com salto médio',
+    rating: 4.9,
+    reviews: 156,
+    isNew: true,
+    isSale: true,
+    description: 'O toque final para seu look de verão. Design moderno com salto bloco para maior conforto.',
+    sizes: [35, 36, 37, 38]
+  },
+  {
+    id: 4,
+    name: 'Bota Masculina Casual',
+    category: 'casual',
+    price: 249.90,
+    originalPrice: null,
+    image: 'Bota masculina marrom em couro casual',
+    rating: 4.7,
+    reviews: 78,
+    isNew: false,
+    isSale: false,
+    description: 'Estilo e robustez para o dia a dia. Perfeita para compor um visual moderno e despojado.',
+    sizes: [39, 40, 41, 42]
+  },
+  {
+    id: 5,
+    name: 'Sapatilha Feminina Confort',
+    category: 'feminino',
+    price: 89.90,
+    originalPrice: 119.90,
+    image: 'Sapatilha feminina bege confortável',
+    rating: 4.5,
+    reviews: 203,
+    isNew: false,
+    isSale: true,
+    description: 'Conforto sem abrir mão do estilo. Ideal para o trabalho ou passeios, com palmilha macia.',
+    sizes: [34, 35, 36, 37, 38, 39]
+  },
+  {
+    id: 6,
+    name: 'Tênis Casual Urbano',
+    category: 'casual',
+    price: 179.90,
+    originalPrice: null,
+    image: 'Tênis casual branco minimalista',
+    rating: 4.4,
+    reviews: 92,
+    isNew: true,
+    isSale: false,
+    description: 'Versatilidade para o seu dia a dia. Um clássico minimalista que combina com tudo.',
+    sizes: [37, 38, 39, 40, 41]
+  },
+  {
+    id: 7,
+    name: 'Sapato Social Premium',
+    category: 'social',
+    price: 349.90,
+    originalPrice: 449.90,
+    image: 'Sapato social premium em couro marrom',
+    rating: 4.9,
+    reviews: 67,
+    isNew: true,
+    isSale: true,
+    description: 'Acabamento impecável e materiais nobres. Para homens que exigem o melhor em calçados sociais.',
+    sizes: [40, 41, 42, 43, 44]
+  },
+  {
+    id: 8,
+    name: 'Tênis Running Pro',
+    category: 'esportivo',
+    price: 399.90,
+    originalPrice: null,
+    image: 'Tênis de corrida profissional preto e branco',
+    rating: 4.8,
+    reviews: 145,
+    isNew: false,
+    isSale: false,
+    description: 'Leve seus treinos a um novo nível. Máxima responsividade e suporte para corredores de elite.',
+    sizes: [39, 40, 41, 42, 43]
+  }
+];
+
+export const categories = [
+  { id: 'todos', name: 'Todos', icon: '👟' },
+  { id: 'esportivo', name: 'Esportivo', icon: '⚡' },
+  { id: 'social', name: 'Social', icon: '👔' },
+  { id: 'casual', name: 'Casual', icon: '🚶' },
+  { id: 'feminino', name: 'Feminino', icon: '👠' }
+];
